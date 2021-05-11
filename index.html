@@ -45,8 +45,8 @@
 
     var xmas = new Date("2021-12-25");
     var timeDiffXmas = xmas.getTime() - now.getTime();
-    var dateXmas = Math.floor(timeDiffXmas / (1000 * 60 * 60 * 24) + 1);
-    $("#xmas").text(dateXmas + "일남음");
+    var dayXmas = Math.floor(timeDiffXmas / (1000 * 60 * 60 * 24) + 1);
+    $("#xmas").text(dayXmas + "일남음");
 
     var ms = start.getTime() + 999 * (1000 * 60 * 60 * 24);
     var thousand = new Date(ms);
@@ -54,8 +54,8 @@
     $("#thousand-date").text(thousandDate);
 
     var timeDiffThousand = thousand.getTime() - now.getTime();
-    var dateThousand = Math.floor(timeDiffThousand / (1000 * 60 * 60 * 24) + 1);
-    $("#thousand").text(dateThousand + "일남음");
+    var dayThousand = Math.floor(timeDiffThousand / (1000 * 60 * 60 * 24) + 1);
+    $("#thousand").text(dayThousand + "일남음");
   </script>  
 </body>
 </html>
